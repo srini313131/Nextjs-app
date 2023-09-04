@@ -4,7 +4,7 @@ type Props = {
   name: string;
   changeHandler: (name: string) => void;
 };
-const Input: FC<Props> = memo(({ name, changeHandler }) => {
+export default memo(function Input({ name, changeHandler }: Props) {
   console.log("Input cmp rendered");
   return (
     <>
@@ -17,4 +17,3 @@ const Input: FC<Props> = memo(({ name, changeHandler }) => {
     </>
   );
 });
-export default Input;
