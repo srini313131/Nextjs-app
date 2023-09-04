@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.dark-theme{
+  border: 1px solid red; background-color:bisque
+}
+.light-theme{
+  border: 1px solid blue; background-color:lightblue
+}

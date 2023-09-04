@@ -36,6 +36,7 @@ export default function Form(){
       <span>stop watch: {counter}</span>
       <button onClick={handleTimerStop}> stop</button>
       <button onClick={handleTimerClear}> clear</button>
+      
       </div>
       
     
