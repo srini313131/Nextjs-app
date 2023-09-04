@@ -1,10 +1,10 @@
-const getSales: () => Promise<Sale[]> = async () => {
+const getSales: () => Promise<any[]> = async () => {
   try {
-    const resp = await fetch("http://localhost:8080/sales");
-
-    return resp.json();
+    const results = new Promise<any[]>((resolve, reject) => resolve([]));
+    return results;
   } catch (error) {
     console.log("err=>>>", error);
+    return new Promise<any[]>((resolve, reject) => resolve([]));
   }
 };
 type Sale = {
